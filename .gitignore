@@ -1,4 +1,13 @@
+# Virtual environment
 venv/
+
+# Python cache
 __pycache__/
 *.pyc
-*.db  # If using SQLite file
+
+# SQLite database
+queuectl.db
+
+# Backup files
+README.md.txt
+*.tmp
