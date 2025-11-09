@@ -190,5 +190,3 @@ python queuectl.py worker stop
 [GitHub](https://github.com/vijayhanand003) | [LinkedIn](https://www.linkedin.com/in/vijay-h-anand-4a925625a/)
 
 ---
-
-> ⚡ *“A minimal, production-grade job queue — built from scratch, tested, documented, and ready to scale.”*
