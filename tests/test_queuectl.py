@@ -97,7 +97,7 @@ def run_tests():
         exit(1)
 
     print("\nALL 4 TESTS PASSED!")
-    print("QueueCTL is ready for submission!")
+    print("QueueCTL is ready!")
 
 # REQUIRED FOR WINDOWS
 if __name__ == '__main__':
