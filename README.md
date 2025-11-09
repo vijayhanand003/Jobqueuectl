@@ -67,7 +67,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
->  Use PowerShell’s `Activate.ps1` on Windows. If using CMD, run `venv\Scripts\activate.bat`.
+> Use PowerShell’s `Activate.ps1` on Windows. If using CMD, run `venv\Scripts\activate.bat`.
 
 ---
 
@@ -81,45 +81,45 @@ Remove-Item queuectl.db -ErrorAction SilentlyContinue
 python -m tests.test_queuectl
 ```
 
- **Expected Output:** `ALL TESTS PASSED!`
+**Expected Output:** `ALL TESTS PASSED!`
 
 ---
 
 ## CLI Usage
 
-###  Enqueue a Job
+### Enqueue a Job
 
 ```powershell
 python queuectl.py enqueue "{\"id\":\"job1\",\"command\":\"cmd /c echo Hello World\"}"
 ```
 
-###  Start Workers
+### Start Workers
 
 ```powershell
 python queuectl.py worker start --count 3
 ```
 
-###  Check Status
+### Check Status
 
 ```powershell
 python queuectl.py status
 ```
 
-###  List Jobs
+### List Jobs
 
 ```powershell
 python queuectl.py list --state pending
 python queuectl.py list --state completed
 ```
 
-###  Dead Letter Queue (DLQ)
+### Dead Letter Queue (DLQ)
 
 ```powershell
 python queuectl.py dlq list
 python queuectl.py dlq retry job1
 ```
 
-###  Configuration
+### Configuration
 
 ```powershell
 python queuectl.py config set max-retries 5
@@ -127,7 +127,7 @@ python queuectl.py config set backoff_base 3
 python queuectl.py config get max-retries
 ```
 
-###  Stop Workers
+### Stop Workers
 
 ```powershell
 python queuectl.py worker stop
@@ -174,6 +174,13 @@ python queuectl.py worker stop
 | JSON parsing errors   | Escape quotes or use JSON file path         |
 | Workers not executing | Ensure `worker start` is running            |
 | Multiprocessing error | Confirm Python 3.11+ and Windows spawn mode |
+
+---
+
+## Demo Video
+
+ **Watch the project demo video here:**
+[QueueCTL Demo Video - Google Drive](https://drive.google.com/drive/folders/1F3bo-2kbh78STcBWdbojGx8ROFsn1d99?usp=sharing)
 
 ---
 
